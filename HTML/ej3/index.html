@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulario de registro</legend>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <!-- Apellidos -->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" required>
+            <!-- Dirección -->
+            <label for="tipoVia">Tipo de vía:</label>
+            <input type="text" name="tipoVia" id="tipoVia" required>
+            <label for="nombreVia">Nombre de la vía:</label>
+            <input type="text" name="nombreVia" id="nombreVia" required>
+            <label for="cp">Código postal:</label>
+            <input type="number" name="cp" id="cp" required>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" name="ciudad" id="ciudad" required>
+            <label for="provincia">Provincia:</label>
+            <input type="text" name="provincia" id="provincia" required>
+            <label for="pais">País:</label>
+            <input type="text" name="pais" id="pais" required>
+            <!-- Fecha nacimiento -->
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento"required>
+            <!-- Nota media universidad -->
+            <label for="nota">Nota media en la universidad:</label>
+            <input type="number" name="nota" id="nota" min="1" max="10" step="0.1" required>
+            <!-- Teléfono -->
+            <label for="telefono">Número de teléfono:</label>
+            <input type="number" name="telefono" id="telefono" pattern="[0-9]{9}" required>
+            <!-- Correo electrónico -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required>
+            <!-- Contraseña -->
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass" required>
+            <label for="confirmPass">Repetir contraseña:</label>
+            <input type="password" name="confirmPass" id="confirmPass" required>
+            <!-- Seleccionar país -->
+            <label for="selectPais">Seleccionar país:</label>
+            <select name="selectPais" id="selectPais" required>
+                <option value="es">España</option>
+                <option value="fr">Francia</option>
+                <option value="pt">Portugal</option>
+                <option value="ad">Andorra</option>
+            </select>
+            <!-- Tipo cuenta -->
+            <label for="tipoCuenta">Tipo de cuenta:</label>
+            <select name="tipoCuenta" id="tipoCuenta" onchange="mostrarDescripcion()" required>
+                <option value="free">Gratuita</option>
+                <option value="basic">Básica</option>
+                <option value="premium">Premium</option>
+            </select>
+            <div id="descripcion"></div>
+            <!-- Sobre mí -->
+            <label for="sobreMi">Sobre mí:</label>
+            <textarea name="sobreMi" id="sobreMi" cols="30" rows="5" required></textarea>
+            <!-- Foto perfil -->
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" name="foto" id="foto">
+            <!-- CV -->
+            <label for="cv">Curriculum Vitae:</label>
+            <input type="file" name="cv" id="cv" accept=".pdf" required>
+            <!-- Enviar -->
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+</html>
