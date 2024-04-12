@@ -1,0 +1,45 @@
+.div {
+    width: 50px;
+    height: 50px;
+    /* display: inline-block; */
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #69F;
+    
+}
+.redondeado {
+    border-radius: 20%;
+}
+.redondo {
+    border-radius: 50%;
+}
+.background1 {
+    background-color: #C9F;
+}
+.columna1 {
+    background-color: #C9C;
+}
+.background2 {
+    background-color: #F9F;
+}
+.columna2 {
+    background-color: #C9F;
+}
+.background3 {
+    background-color: #F9C;
+}
+.columna3 {
+    background-color: #F9F;
+}
+.background4 {
+    background-color: #F99;
+}
+.columna4 {
+    background-color: #F9C;
+}
+.background5 {
+    background-color: #C9C;
+}
+.columna5 {
+    background-color: #F99;
+}
