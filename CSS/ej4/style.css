@@ -1,12 +1,23 @@
 .div {
     width: 50px;
     height: 50px;
-    /* display: inline-block; */
     margin: 10px;
     cursor: pointer;
-    border: 2px solid #69F;
-    
 }
+
+.grid-container {
+    display: grid;
+    margin: 30px;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 20px;
+    cursor: pointer;
+}
+.grid-item {
+    width: 50px;
+    height: 50px;
+}
+
 .redondeado {
     border-radius: 20%;
 }
@@ -18,28 +29,33 @@
 }
 .columna1 {
     background-color: #C9C;
+    border: 3px dotted #F99;
 }
 .background2 {
     background-color: #F9F;
 }
 .columna2 {
     background-color: #C9F;
+    border: 3px dashed #C9C;
 }
 .background3 {
     background-color: #F9C;
 }
 .columna3 {
     background-color: #F9F;
+    border: 3px solid #C9F;
 }
 .background4 {
     background-color: #F99;
 }
 .columna4 {
     background-color: #F9C;
+    border: 3px dashed #F9F;
 }
 .background5 {
     background-color: #C9C;
 }
 .columna5 {
     background-color: #F99;
+    border: 3px dotted #F9C;
 }
