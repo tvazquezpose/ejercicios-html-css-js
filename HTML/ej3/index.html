@@ -57,7 +57,7 @@
             </select>
             <!-- Tipo cuenta -->
             <label for="tipoCuenta">Tipo de cuenta:</label>
-            <select name="tipoCuenta" id="tipoCuenta" onchange="mostrarDescripcion()" required>
+            <select name="tipoCuenta" id="tipoCuenta" onchange="mostrarDescripcion(event)" required>
                 <option value="free">Gratuita</option>
                 <option value="basic">Básica</option>
                 <option value="premium">Premium</option>
@@ -68,7 +68,7 @@
             <textarea name="sobreMi" id="sobreMi" cols="30" rows="5" required></textarea>
             <!-- Foto perfil -->
             <label for="foto">Foto de perfil:</label>
-            <input type="file" name="foto" id="foto">
+            <input type="file" name="foto" id="foto" accept=".jpg" required>
             <!-- CV -->
             <label for="cv">Curriculum Vitae:</label>
             <input type="file" name="cv" id="cv" accept=".pdf" required>
